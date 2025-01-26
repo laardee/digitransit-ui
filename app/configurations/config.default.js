@@ -711,6 +711,9 @@ export default {
   /* Do not change order of theme map lines */
   /* key: name of theme, value: regex matching part of host name */
   themeMap: {
+    payiqjyvaskyla: 'payiqjyvaskyla',
+    payiqhelsinki: 'payiqhelsinki',
+    payiqkuopio: 'payiqkuopio',
     hsl: '(reittiopas|next-dev.digitransit)',
     apphsl: '(test.digitransit)',
     turku: '(turku|foli)',
@@ -733,9 +736,6 @@ export default {
     kela: 'kelareitit',
     pori: 'pori',
     raasepori: '(raasepori|bosse)',
-    payiqjyvaskyla: 'payiqjyvaskyla',
-    payiqhsl: 'payiqhsl',
-    payiqkuopio: 'payiqkuopio',
   },
 
   minutesToDepartureLimit: 9,
