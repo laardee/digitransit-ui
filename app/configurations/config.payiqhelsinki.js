@@ -1,7 +1,7 @@
 /* eslint-disable prefer-template */
 import configMerger from '../util/configMerger';
 
-const CONFIG = 'payiqhsl';
+const CONFIG = 'payiqhelsinki';
 const parentConfig = require('./config.hsl').default;
 
 delete parentConfig.ticketPurchaseLink;
