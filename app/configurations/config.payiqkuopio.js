@@ -8,8 +8,9 @@ delete parentConfig.ticketPurchaseLink;
 
 export default configMerger(parentConfig, {
   CONFIG,
+  ticketLink: 'https://www.payiq.net/kuopio',
   appBarLink: {
     name: 'PayiQ - Kuopio',
-    href: 'http://www.payiq.net/kuopio',
+    href: 'https://www.payiq.net/kuopio',
   },
 });
