@@ -8,8 +8,9 @@ delete parentConfig.ticketPurchaseLink;
 
 export default configMerger(parentConfig, {
   CONFIG,
+  ticketLink: 'https://www.payiq.net/hsl',
   appBarLink: {
     name: 'PayiQ - HSL',
-    href: 'http://www.payiq.net/hsl',
+    href: 'https://www.payiq.net/hsl',
   },
 });
