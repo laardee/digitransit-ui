@@ -733,6 +733,9 @@ export default {
     kela: 'kelareitit',
     pori: 'pori',
     raasepori: '(raasepori|bosse)',
+    payiqjyvaskyla: 'payiqjyvaskyla',
+    payiqhsl: 'payiqhsl',
+    payiqkuopio: 'payiqkuopio',
   },
 
   minutesToDepartureLimit: 9,
