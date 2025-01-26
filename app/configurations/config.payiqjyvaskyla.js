@@ -9,6 +9,7 @@ delete parentConfig.ticketPurchaseLink;
 export default configMerger(parentConfig, {
   CONFIG,
   ticketLink: 'https://www.payiq.net/jyvaskyla',
+  showTicketPrice: false,
   appBarLink: {
     name: 'PayiQ - Jyvaskyla',
     href: 'https://www.payiq.net/jyvaskyla',
