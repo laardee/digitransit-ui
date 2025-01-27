@@ -715,6 +715,7 @@ export default {
   /* Do not change order of theme map lines */
   /* key: name of theme, value: regex matching part of host name */
   themeMap: {
+    payiqmatka: 'payiqmatka',
     payiqjyvaskyla: 'payiqjyvaskyla',
     payiqhelsinki: 'payiqhelsinki',
     payiqkuopio: 'payiqkuopio',
