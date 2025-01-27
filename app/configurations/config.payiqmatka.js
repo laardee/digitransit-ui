@@ -11,5 +11,4 @@ export default configMerger(parentConfig, {
   CONFIG,
   // ticketLink: 'https://www.payiq.net/hsl',
   showTicketPrice: false,
-  logo: 'payiq/iqpayment-logo-white.svg',
 });
