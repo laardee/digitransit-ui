@@ -9,5 +9,6 @@ delete parentConfig.ticketLink;
 
 export default configMerger(parentConfig, {
   CONFIG,
+  hideHeader: true,
   showTicketPrice: false,
 });
