@@ -9,7 +9,6 @@ delete parentConfig.ticketLink;
 
 export default configMerger(parentConfig, {
   CONFIG,
-  hideHeader: true,
   // ticketLink: 'https://www.payiq.net/hsl',
   showTicketPrice: false,
 });
