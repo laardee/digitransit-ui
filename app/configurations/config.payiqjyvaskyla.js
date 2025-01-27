@@ -5,13 +5,9 @@ const CONFIG = 'payiqjyvaskyla';
 const parentConfig = require('./config.jyvaskyla').default;
 
 delete parentConfig.ticketPurchaseLink;
+delete parentConfig.ticketLink;
 
 export default configMerger(parentConfig, {
   CONFIG,
-  ticketLink: 'https://www.payiq.net/jyvaskyla',
   showTicketPrice: false,
-  appBarLink: {
-    name: 'PayiQ - Jyvaskyla',
-    href: 'https://www.payiq.net/jyvaskyla',
-  },
 });
