@@ -711,10 +711,15 @@ export default {
   /* Do not change order of theme map lines */
   /* key: name of theme, value: regex matching part of host name */
   themeMap: {
-    payiqmatka: 'payiqmatka',
-    payiqjyvaskyla: 'payiqjyvaskyla',
     payiqhelsinki: 'payiqhelsinki',
+    payiqjyvaskyla: 'payiqjyvaskyla',
+    payiqkouvola: 'payiqkouvola',
     payiqkuopio: 'payiqkuopio',
+    payiqlahti: 'payiqlahti',
+    payiqmatka: 'payiqmatka',
+    payiqoulu: 'payiqoulu',
+    payiqturku: 'payiqturku',
+    payiqvarely: 'payiqvarely',
     hsl: '(reittiopas|next-dev.digitransit)',
     apphsl: '(test.digitransit)',
     turku: '(turku|foli)',
