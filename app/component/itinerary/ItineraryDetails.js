@@ -396,6 +396,9 @@ const withRelay = createFragmentContainer(
   {
     itinerary: graphql`
       fragment ItineraryDetails_itinerary on Itinerary {
+        id
+        waitingTime
+        numberOfTransfers
         duration
         start
         end
@@ -596,6 +599,31 @@ const withRelay = createFragmentContainer(
               zoneId
               parentStation {
                 gtfsId
+              }
+            }
+          }
+          steps {
+            absoluteDirection
+            alerts {
+              alertDescriptionText
+            }
+            area
+            bogusName
+            distance
+            exit
+
+            lat
+            lon
+            relativeDirection
+            stayOn
+            streetName
+            walkingBike
+            feature {
+              ... on Entrance {
+                entranceId
+                name
+                publicCode
+                wheelchairAccessible
               }
             }
           }
