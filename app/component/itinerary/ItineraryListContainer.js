@@ -17,6 +17,11 @@ import { isIOS, isSafari } from '../../util/browser';
 import ItineraryNotification from './ItineraryNotification';
 import { transitEdges } from './ItineraryPageUtils';
 
+import {
+  trackRouteSelection,
+  TRACK_ROUTE_SELECTION_ACTION_CLICK,
+} from '../../action/payiq/RoutesActions';
+
 function ItineraryListContainer(
   {
     planEdges,
@@ -45,7 +50,14 @@ function ItineraryListContainer(
     return fallback;
   }
 
+  const { context } = this;
+
   const onSelectImmediately = index => {
+    context.executeAction(trackRouteSelection, {
+      edgeId: planEdges[index]?.node?.id,
+      action: TRACK_ROUTE_SELECTION_ACTION_CLICK,
+    });
+
     const subpath = getSubPath('/');
     // eslint-disable-next-line compat/compat
     const momentumScroll =
@@ -231,6 +243,7 @@ const connectedContainer = createFragmentContainer(withConfig, {
     fragment ItineraryListContainer_planEdges on PlanEdge @relay(plural: true) {
       ...ItineraryList_planEdges
       node {
+        id
         legs {
           mode
         }

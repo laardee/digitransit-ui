@@ -266,6 +266,7 @@ const containerComponent = createFragmentContainer(ItineraryList, {
     fragment ItineraryList_planEdges on PlanEdge @relay(plural: true) {
       node {
         ...Itinerary_itinerary
+        id
         emissionsPerPerson {
           co2
         }
