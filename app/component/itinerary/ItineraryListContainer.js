@@ -17,10 +17,10 @@ import { isIOS, isSafari } from '../../util/browser';
 import ItineraryNotification from './ItineraryNotification';
 import { transitEdges } from './ItineraryPageUtils';
 
-import {
-  trackRouteSelection,
-  TRACK_ROUTE_SELECTION_ACTION_CLICK,
-} from '../../action/payiq/RoutesActions';
+// import {
+//   trackRouteSelection,
+//   TRACK_ROUTE_SELECTION_ACTION_CLICK,
+// } from '../../action/payiq/RoutesActions';
 
 function ItineraryListContainer(
   {
@@ -50,13 +50,14 @@ function ItineraryListContainer(
     return fallback;
   }
 
-  const { context } = this;
-
+  // console.log(context);
   const onSelectImmediately = index => {
-    context.executeAction(trackRouteSelection, {
-      edgeId: planEdges[index]?.node?.id,
-      action: TRACK_ROUTE_SELECTION_ACTION_CLICK,
-    });
+    // const con = useContext(FluxContext);
+    // console.log(con);
+    // context.executeAction(trackRouteSelection, {
+    //   edgeId: planEdges[index]?.node?.id,
+    //   action: TRACK_ROUTE_SELECTION_ACTION_CLICK,
+    // });
 
     const subpath = getSubPath('/');
     // eslint-disable-next-line compat/compat
