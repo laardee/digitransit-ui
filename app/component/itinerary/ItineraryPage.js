@@ -9,10 +9,10 @@ import React, { cloneElement, useEffect, useRef, useState } from 'react';
 import { FormattedMessage, intlShape } from 'react-intl';
 import { fetchQuery } from 'react-relay';
 import { saveFutureRoute } from '../../action/FutureRoutesActions';
-import {
-  trackRouteSelection,
-  TRACK_ROUTE_SELECTION_ACTION_VIEW,
-} from '../../action/payiq/RoutesActions';
+// import {
+//   trackRouteSelection,
+//   TRACK_ROUTE_SELECTION_ACTION_VIEW,
+// } from '../../action/payiq/RoutesActions';
 import { saveSearch } from '../../action/SearchActions';
 import { TransportMode } from '../../constants';
 import { mapLayerShape } from '../../store/MapLayerStore';
@@ -1246,11 +1246,11 @@ export default function ItineraryPage(props, context) {
           : undefined;
       carEmissions = carEmissions ? Math.round(carEmissions) : undefined;
 
-      context.executeAction(trackRouteSelection, {
-        // eslint-disable-next-line no-underscore-dangle
-        edgeId: combinedEdges[selectedIndex]?.node?.__id,
-        action: TRACK_ROUTE_SELECTION_ACTION_VIEW,
-      });
+      // context.executeAction(trackRouteSelection, {
+      //   // eslint-disable-next-line no-underscore-dangle
+      //   edgeId: combinedEdges[selectedIndex]?.node?.__id,
+      //   action: TRACK_ROUTE_SELECTION_ACTION_VIEW,
+      // });
 
       content = (
         <ItineraryTabs
@@ -1282,11 +1282,11 @@ export default function ItineraryPage(props, context) {
       !settingsState.settingsChanged &&
       !hash; // no notifier on p&r or bike&public lists
 
-    context.executeAction(trackRouteSelection, {
-      // eslint-disable-next-line no-underscore-dangle
-      edgeId: combinedEdges[selectedIndex]?.node?.__id,
-      action: TRACK_ROUTE_SELECTION_ACTION_VIEW,
-    });
+    // context.executeAction(trackRouteSelection, {
+    //   // eslint-disable-next-line no-underscore-dangle
+    //   edgeId: combinedEdges[selectedIndex]?.node?.__id,
+    //   action: TRACK_ROUTE_SELECTION_ACTION_VIEW,
+    // });
 
     content = (
       <ItineraryListContainer
