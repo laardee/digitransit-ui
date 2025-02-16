@@ -10,5 +10,6 @@ delete parentConfig.ticketLink;
 export default configMerger(parentConfig, {
   CONFIG,
   // ticketLink: 'https://www.payiq.net/kouvola',
+  indexPath: 'kouvola/',
   showTicketPrice: false,
 });
