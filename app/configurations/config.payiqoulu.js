@@ -9,5 +9,6 @@ delete parentConfig.ticketLink;
 
 export default configMerger(parentConfig, {
   CONFIG,
+  indexPath: 'oulu/',
   showTicketPrice: false,
 });
