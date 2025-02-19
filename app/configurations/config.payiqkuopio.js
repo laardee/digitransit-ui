@@ -9,6 +9,6 @@ delete parentConfig.ticketLink;
 
 export default configMerger(parentConfig, {
   CONFIG,
-  indexPath: 'kuopio/',
+  // indexPath: 'kuopio/',
   showTicketPrice: false,
 });
