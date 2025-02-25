@@ -718,6 +718,7 @@ export default {
     payiqlahti: 'payiqlahti',
     payiqmatka: 'payiqmatka',
     payiqoulu: 'payiqoulu',
+    payiqtampere: 'payiqtampere',
     payiqturku: 'payiqturku',
     payiqvarely: 'payiqvarely',
     hsl: '(reittiopas|next-dev.digitransit)',
