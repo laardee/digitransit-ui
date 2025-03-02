@@ -13,8 +13,14 @@ if (parentConfig?.geoJson?.layers) {
   );
 }
 
+const apptitle = 'PayiQ - Jyväskylä';
+
 export default configMerger(parentConfig, {
   CONFIG,
+  title: apptitle,
+  socialMedia: {
+    title: apptitle,
+  },
   // indexPath: 'jyvaskyla/',
   showTicketPrice: false,
 });
