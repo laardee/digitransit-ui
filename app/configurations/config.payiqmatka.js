@@ -7,7 +7,7 @@ const parentConfig = require('./config.matka').default;
 delete parentConfig.ticketPurchaseLink;
 delete parentConfig.ticketLink;
 
-const apptitle = 'Payiq - Matka';
+const apptitle = 'PayiQ - Matka';
 
 export default configMerger(parentConfig, {
   CONFIG,
