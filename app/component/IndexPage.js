@@ -478,11 +478,11 @@ class IndexPage extends React.Component {
                     isMobile
                   />
                   <CtrlPanel.SeparatorLine />
-                  <>{this.NearStops(CtrlPanel)}</>
-                  <div className="stop-route-search-container">
-                    <StopRouteSearch isMobile {...stopRouteSearchProps} />
-                  </div>
-                  <CtrlPanel.SeparatorLine usePaddingBottom20 />
+                  <TrafficNowLink
+                    lang={lang}
+                    handleClick={this.trafficNowHandler}
+                    fontWeights={fontWeights}
+                  />
                   {!trafficNowLink ||
                     (trafficNowLink[lang] !== '' && (
                       <TrafficNowLink
@@ -491,6 +491,11 @@ class IndexPage extends React.Component {
                         fontWeights={fontWeights}
                       />
                     ))}
+                  <CtrlPanel.SeparatorLine usePaddingBottom20 />
+                  <>{this.NearStops(CtrlPanel)}</>
+                  <div className="stop-route-search-container">
+                    <StopRouteSearch isMobile {...stopRouteSearchProps} />
+                  </div>
                 </CtrlPanel>
               </div>
             </div>

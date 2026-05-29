@@ -293,6 +293,10 @@ function startServer() {
   );
 }
 
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+});
+
 async function fetchCitybikeSeasons() {
   const client = new CosmosClient(process.env.CITYBIKE_DB_CONN_STRING);
   const database = client.database(process.env.CITYBIKE_DATABASE);
